@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-light">
+    <div id="container-total">
+        <h1>Todo List</h1>
+        <hr>
+        <label for="nombreTarea">Nueva Tarea</label>
+        <input type="text" name="nombreTarea" id="nombreTarea">
+        <button class="btn btn-success" id="agregar">Agregar</button>
+        <div class="row" id="container">
+
+            <div class="col-md-2">
+                <p>Total: <span id="totalTareas">0</span></p>
+                <p>Realizadas <span id="tareasRealizadas">0</span></p>
+            </div>
+            <div class="col-md-4" id="divListaTareas">
+                <table id="listaTareas">
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
